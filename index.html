@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+        table, th, td {
+          
+          border: 1px solid black;
+          border-collapse: collapse;
+          padding: 5px;
+        }
+        th {
+            text-align: center;            
+        }
+        td{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Choose Currency</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">AED</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SAR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">KWD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">OMR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BHD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">QAR</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Enable Contributions
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Disable Contributions
+            </label>
+          </div>
+      </nav>
+    
+      
+      
+</div>
+    <h2>SAR CONTRIBUTIONS</h2>
+    <button type="button" onclick="update()">Submit Changes</button>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 15%">Tenor</th>
+                <th style="width: 10%">Bid</th>
+                <th style="width: 10%">Ask</th>
+                <th style="width: 30%">Input Bid</th>
+                <th style="width: 30%;">Input Ask</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>O/N</th>
+                <td>1</td>
+                <td>2</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>T/N</th>
+                <td>0.3</td>
+                <td>0.5</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>S/N</th>
+                <td>0.3</td>
+                <td>0.5</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>1W</th>
+                <td>2</td>
+                <td>3</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>2W</th>
+                <td>4</td>
+                <td>6</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>3W</th>
+                <td>6</td>
+                <td>8</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>1M</th>
+                <td>9</td>
+                <td>12</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>2M</th>
+                <td>17</td>
+                <td>20</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>3M</th>
+                <td>23</td>
+                <td>27</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>6M</th>
+                <td>45</td>
+                <td>50</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>9M</th>
+                <td>65</td>
+                <td>70</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>1Y</th>
+                <td>88</td>
+                <td>93</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>2Y</th>
+                <td>210</td>
+                <td>240</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>3Y</th>
+                <td>400</td>
+                <td>460</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>4Y</th>
+                <td>440</td>
+                <td>650</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>4Y</th>
+                <td>440</td>
+                <td>650</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>4Y</th>
+                <td>440</td>
+                <td>650</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>5Y</th>
+                <td>650</td>
+                <td>850</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>7Y</th>
+                <td>800</td>
+                <td>1200</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+            <tr>
+                <th>10Y</th>
+                <td>1150</td>
+                <td>1450</td>
+                <td><input type="number"> </td>
+                <td><input type="number"> </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <script>
+        /* This is a function to capture the initial values loaded and make them placeholders */
+        window.onload = function() {
+            // Get all rows in the table body
+            const rows = document.querySelectorAll('tbody tr');
+
+            rows.forEach(row => {
+                
+                // Get the Bid and Ask values
+                const bidValue = row.cells[1].innerHTML;
+                const askValue = row.cells[2].innerHTML;
+
+                // Set the values to the input fields
+                const bidInput = row.cells[3].querySelector('input');
+                const askInput = row.cells[4].querySelector('input');
+
+                bidInput.value = bidValue;
+                askInput.value = askValue;
+            });
+        } 
+        function update(){
+            const rows = document.querySelectorAll('tbody tr');
+
+            rows.forEach(row => {         
+                // Set the values to the input fields
+                let bidInput = row.cells[3].querySelector('input');
+                let askInput = row.cells[4].querySelector('input');
+                
+                // Update the Bid and Ask values in the table cells
+                row.cells[1].innerHTML = bidInput.value;
+                row.cells[2].innerHTML = askInput.value;
+                
+            });
+
+            
+        }
+
+    </script>
+</body>
+
+</html>
